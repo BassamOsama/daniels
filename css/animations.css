@@ -1,0 +1,156 @@
+@keyframes type-writer {
+    0% {
+        content: " |";
+    }
+
+    3% {
+        content: " De|";
+    }
+
+    5% {
+        content: " Deve|";
+    }
+
+    7% {
+        content: " Develo|";
+    }
+
+    10% {
+        content: " Develope|";
+    }
+
+    13% {
+        content: " Developer|";
+    }
+
+    15% {
+        content: " Developer|";
+    }
+
+    17% {
+        content: " Developer|";
+    }
+
+    20% {
+        content: " Developer|";
+    }
+
+    24% {
+        content: " Developer|";
+    }
+
+    25% {
+        content: " Developer|";
+    }
+
+    27% {
+        content: " Developer|";
+    }
+
+    30% {
+        content: " Developer|";
+    }
+
+    32% {
+        content: " Developer|";
+    }
+
+    35% {
+        content: " Developer|";
+    }
+
+    37% {
+        content: " Develope|";
+    }
+
+    40% {
+        content: " Develo|";
+    }
+
+    42% {
+        content: " Deve|";
+    }
+
+    45% {
+        content: " De|";
+    }
+
+    47% {
+        content: " Desi|";
+    }
+    
+    55% {
+        content: " Design|";
+    }
+
+    57% {
+        content: " Designer|";
+    }
+
+    60% {
+        content: " Designer|";
+    }
+
+    62% {
+        content: " Designer|";
+    }
+
+    65% {
+        content: " Designer|";
+    }
+
+    67% {
+        content: " Designer|";
+    }
+
+    70% {
+        content: " Designe|";
+    }
+
+    72% {
+        content: " Desig|";
+    }
+
+    75% {
+        content: " Des|";
+    }
+
+    77% {
+        content: " Lar|";
+    }
+
+    80% {
+        content: " larry|";
+    }
+
+    82% {
+        content: " Larry Dan|";
+    }
+
+    85% {
+        content: " Larry Danie|";
+    }
+
+    87% {
+        content: " Larry Daniels|";
+    }
+
+    90% {
+        content: " Larry Daniels|";
+    }
+
+    92% {
+        content: " Larry Daniels|";
+    }
+
+    95% {
+        content: " Larry Danie|";
+    }
+
+    97% {
+        content: " Larry Da|";
+    }
+    100% {
+        content: " Larry|";
+    }
+}

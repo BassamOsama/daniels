@@ -1,0 +1,17 @@
+@media (max-width: 48rem) {
+    .txt h5 {
+        font-size: 3.125rem;
+    }
+    .txt h1 {
+        font-size: 1.875rem;
+    }
+    .about .container,
+    .services .container,
+    .portfolio .container,
+    .testimonial .container,
+    .counter .container,
+    .contact .container ,
+    .team .container{
+        width: 100% !important;
+    }
+}

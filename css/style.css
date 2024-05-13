@@ -1,0 +1,542 @@
+/*? ------------------------------- -general/global- css ------------------------------ */
+body {
+    font-family: "Poppins", sans-serif;
+    color: #343434;
+    font-weight: 400;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+span {
+    display: inline-block;
+}
+.section-padding {
+    padding: 6.25rem 0rem;
+}
+.w-65 {
+    width: 65%;
+}
+.pb-70 {
+    padding-bottom: 4.375rem;
+}
+.mb-30 {
+    margin-bottom: 1.875rem;
+}
+.mb-50 {
+    margin-bottom: 3.125rem;
+}
+.bg-progress {
+    --bs-progress-bar-bg: #1c1c1c;
+}
+.bg-grey {
+    background-color: #f7f7f7;
+}
+.form-bg {
+    background-color: #f4f4f4;
+}
+.section-header {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.section-header h3 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+    font-family: "Montserrat", sans-serif;
+}
+.section-header h3::after {
+    content: "";
+    width: 100%;
+    height: 1.875rem;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -0.625rem;
+    left: 0;
+    z-index: -1;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+/*? ------------------------------ start of -nav- ------------------------------ */
+.navbar-nav .nav-link {
+    position: relative;
+}
+.navbar-nav .nav-link:hover {
+    color: #1c1c1c;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: .125rem;
+        top: 80%;
+        background-color:#1c1c1c;
+        transition: all 0.5s ease;
+    }
+}
+.navbar-nav .nav-link.active::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: .125rem;
+    top: 80%;
+    background-color: #1c1c1c;
+    transition: all 0.5s ease;
+}
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0rem;
+    height: .125rem;
+    top: 80%;
+    background-color:#1c1c1c;
+}
+nav {
+    z-index: 99;
+    margin-bottom: 1.25rem;
+    min-height: 3.125rem;
+}
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 1.25rem;
+}
+.navbar-brand {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 800;
+    letter-spacing: .0625rem;
+}
+.navbar-nav a {
+    color: #1c1c1c;
+    font-size: .875rem;
+    margin: 0rem .625rem;
+}
+/*? ------------------------------- end of -nav- ------------------------------- */
+/*? ---------------------------- start of -header- ----------------------------- */
+header {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+header .main-txt {
+    transform: translate(0, -50%);
+}
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.65;
+    z-index: 2;
+}
+header .txt {
+    margin-top: 3.125rem;
+}
+.txt h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.125rem;
+    font-weight: 800;
+    margin: 0rem 0rem .625rem 0rem;
+    line-height: 1.1;
+}
+.txt h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 3.75rem;
+    line-height: 1.2;
+    margin: 0rem;
+}
+.txt .span {
+    padding: .75rem 0rem;
+}
+.main-txt .social-icons {
+    margin-top: 1.875rem;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    span {
+        font-size: .875rem;
+        width: 2.1875rem;
+        height: 2.1875rem;
+        line-height: 2.1875rem;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+.txt .animate {
+    transition: all;
+    transition-timing-function: 5s ease-out;
+}
+.txt .animate::after {
+    content: "";
+    animation-name: type-writer;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    font-weight: 500;
+}
+/*? ------------------------------ end of -header- ----------------------------- */
+/*? ------------------------- start of -about- section ------------------------- */
+.about-img {
+    padding-left: 1.875rem;
+}
+.about-img::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0rem;
+    bottom: -1.875rem;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.about .content h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 1.875rem;
+    line-height: 1.1;
+    margin-bottom: .3125rem;
+}
+.about .content span {
+    color: #999;
+    letter-spacing: .125rem;
+    margin-bottom: 1.25rem;
+    font-size: .875rem;
+}
+.about .content p {
+    line-height: 1.6;
+    font-size: .9375rem;
+    color: #748182;
+}
+.about .content .skills {
+    margin-top: 1.875rem;
+
+    .skill-item {
+        margin-bottom: 1.875rem;
+    }
+    .progress {
+        height: 1.5rem;
+        background-color: #f7f7f7;
+        box-shadow: 0rem .125rem .4375rem rgba(0, 0, 0, 0.15) inset;
+        font-size: .8125rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        line-height: 1.1;
+    }
+    span {
+        color: white;
+        font-size: .6875rem;
+        padding-top: .125rem;
+    }
+}
+.about .progress-bar {
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-between;
+    padding: .25rem .625rem;
+}
+.btn-clr {
+    background: #1c1c1c;
+    color: #eee;
+}
+.about button {
+    margin-top: 1.25rem;
+    padding: .625rem 1.875rem;
+    border: .0625rem solid #1c1c1c;
+    border-radius: .3125rem;
+    font-size: .8125rem;
+    transition: all 0.5s;
+}
+.about button:hover {
+    border-color: #1c1c1c;
+}
+.about .btn-hover:hover {
+    background: #1c1c1c;
+    color: #eee;
+}
+/*? -------------------------- end of -about- section -------------------------- */
+/*? ------------------------ start of -services- section ----------------------- */
+.services .item {
+    padding: 2.5rem 1.25rem;
+    background: #fff;
+    box-shadow: 0rem .625rem 1.875rem -0.5rem rgba(0, 0, 0, 0.1);
+    border-radius: .3125rem;
+}
+.services .item:hover {
+    .icon {
+        background: #1c1c1c;
+        color: #eee;
+    }
+}
+.services .item .icon {
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
+    width: 4.375rem;
+    height: 4.375rem;
+    line-height: 4.375rem;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.services .item h6 {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: .9375rem;
+    font-weight: 800;
+    font-size: 1.125rem;
+}
+.services .item p {
+    word-spacing: .125rem;
+    font-size: .875rem;
+    color: #748182;
+    line-height: 1.6;
+}
+/*? ------------------------ end of -services- section ------------------------- */
+/*? ----------------------- start of -portfolio- section ----------------------- */
+.nav-tabs {
+    --bs-nav-tabs-link-active-color: color: #222;
+    --bs-nav-tabs-border-color: color: white;
+    --bs-nav-tabs-link-hover-border-color: white white white;
+    --bs-nav-tabs-link-active-border-color: white white #111;
+    --bs-nav-tabs-border-width: .1875rem;
+}
+.nav {
+    --bs-nav-link-color: color: #222;
+    --bs-nav-link-hover-color: color: #222;
+    --bs-nav-link-font-weight: 700;
+}
+.navbar button:focus {
+    box-shadow: none;
+}
+.gallery .item-img .item-overlay {
+    top: .3125rem;
+    left: .3125rem;
+    right: .3125rem;
+    bottom: .3125rem;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 2;
+    transform: translateY(.625rem);
+    .overlay-txt {
+        transform: translate(0%, -50%);
+    }
+    h6 {
+        font-size: .75rem;
+        font-weight: 700;
+        letter-spacing: .125rem;
+        position: relative;
+        margin-bottom: .9375rem;
+        transform: translateY(-0.9375rem);
+        transition: all 0.5s;
+        font-family: "Montserrat", sans-serif;
+    }
+}
+.gallery .item-img:hover {
+    .item-overlay {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.overlay-icons .icon:hover {
+    i {
+        background: transparent;
+        color: #000;
+    }
+}
+.overlay-icons i {
+    display: inline-block;
+    font-size: .8125rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    line-height: 1.75rem;
+    border-radius: 50%;
+    border: .0625rem solid #111;
+    background: #111;
+    color: #eee;
+    cursor: pointer;
+}
+/*? ------------------------ end of -portfolio- section ------------------------ */
+/*? ---------------------- start of -testimonials- section ----------------------- */
+.testimonial .section-header {
+    margin-bottom: 3.75rem;
+}
+.testimonial h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.875rem 0 .3125rem;
+    font-family: "Montserrat", sans-serif;
+}
+.testimonial span {
+    font-size: .75rem;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 1.875rem;
+}
+.author-img {
+    width: 5.625rem;
+    height: 5.625rem;
+    margin: 0 auto 2.5rem;
+}
+.carousel-inner p {
+    word-spacing: .125rem;
+    line-height: 1.6;
+    margin: 0;
+    font-size: .9375rem;
+    color: #748182;
+    max-width: 85%;
+}
+.carousel-indicators [data-bs-target] {
+    width: .625rem;
+    height: .625rem;
+    background: #d6d6d6;
+    display: block;
+    transition: opacity 0.2s ease;
+    border-radius: 50%;
+    border: 0rem;
+    margin: 0rem .375rem;
+}
+.carousel-indicators .active {
+    background: #869791;
+}
+.carousel-indicators {
+    bottom: -2.5rem;
+}
+/*? ------------------------ end of -testimonials- section ------------------------ */
+/*? -------------------------- start of -counter- section ------------------------- */
+.counter i {
+    font-size: 1.875rem;
+}
+.counter h2 {
+    font-size: 1.875rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+.counter p {
+    font-weight: 600;
+    line-height: 1.6;
+    font-size: .9375rem;
+    color: #748182;
+}
+/*? --------------------------- end of -counter- section ---------------------------- */
+/*? -------------------------- start of -team- section ------------------------------ */
+.single-card {
+    background-color: rgba(52, 52, 52, 0.8);
+}
+.single-card:hover {
+    .img-social {
+        cursor: pointer;
+        opacity: 1;
+        transform: rotateY(0deg) scale(1, 1);
+    }
+}
+.img-box img {
+    transition: all 0.4s ease 0s;
+}
+.img-box:hover {
+    img {
+        transform: scale(1.2);
+    }
+}
+.img-txt {
+    font-family: "Montserrat", sans-serif;
+    margin-top: .625rem;
+    h4 {
+        margin: 0 0 .3125rem;
+    }
+    h5 {
+        font-weight: bold;
+    }
+}
+.img-social {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    text-align: center;
+    inset: .3125rem;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    a {
+        display: inline-block;
+        border: .0625rem solid #000;
+        color: #fff;
+        background-color: #000;
+        font-size: 1.25rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0rem .3125rem;
+    }
+}
+.mid-social {
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.single-card .mid-social a:hover {
+    background-color: #fff;
+    color: #000;
+}
+/*? --------------------------- end of -team- section ------------------------------- */
+/*? ------------------------ start of -contact- section ----------------------------- */
+.contact .info span {
+    font-size: 1.5625rem;
+    margin-bottom: .9375rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.contact .item:hover {
+    span {
+        background: #1c1c1c;
+        color: #eee;
+    }
+}
+.contact .info h6 {
+    font-weight: 700;
+    margin-bottom: .625rem;
+    font-family: "Montserrat", sans-serif;
+}
+.contact .info p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: .9375rem;
+    color: #748182;
+}
+.contact .row input:focus,
+textarea:focus {
+    outline: none;
+}
+.contact .row input,
+textarea {
+    font-size: .875rem;
+}
+.contact .row button {
+    width: fit-content;
+    margin-left: .625rem;
+    font-size: .8125rem;
+    padding: .625rem 2.5rem;
+    border: .0625rem solid #1c1c1c;
+}
+/*? ------------------------ end of -contact- section ------------------------------- */
+/*? ----------------------------- start of -footer- --------------------------------- */
+footer {
+    background: #1c1c1c;
+    padding: 1.875rem 0rem .625rem 0rem;
+    color: #748182;
+    font-size: .8125rem;
+    word-spacing: .125rem;
+}
+/*? ------------------------------ end of -footer- ---------------------------------- */
