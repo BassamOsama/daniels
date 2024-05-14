@@ -14,4 +14,7 @@
     .team .container{
         width: 100% !important;
     }
+    .btn-cntr {
+        justify-content: space-around;
+    }
 }
