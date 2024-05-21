@@ -23,3 +23,17 @@
         align-content: space-around;
     }
 }
+@media (max-width: 1220px) {
+    .our-team .col-lg-4 {
+        min-height: 407.9px;
+        .single-card {
+            height: 100%;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .navbar-nav {
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+}
