@@ -10,11 +10,16 @@
     .portfolio .container,
     .testimonial .container,
     .counter .container,
-    .contact .container ,
-    .team .container{
+    .contact .container,
+    .team .container,
+    .navbar .container {
         width: 100% !important;
     }
     .btn-cntr {
         justify-content: space-around;
+    }
+    .navbar-nav {
+        flex-wrap: wrap;
+        align-content: space-around;
     }
 }
